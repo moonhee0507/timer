@@ -78,8 +78,14 @@ article strong::after {
             justify-content: space-between;
 }
 
-.time img {
+.time-hrs,
+.time-min, 
+.time-sec{
     width: 80px;
+    height: 80px;
+    background: url(./images/box.png) no-repeat;
+    border: none;
+    margin-top: 4px;
 }
 
 .time p {
@@ -92,10 +98,6 @@ article strong::after {
     color: #A5B6EE;
 }
 
-.time img {
-    margin-top: 4px;
-}
-
 .start {
     background: url(./images/start-disabled.png) no-repeat;
     border: none;
@@ -105,7 +107,7 @@ article strong::after {
     margin-right: 12px;
 }
 
-.start:active {
+.start.active {
     background: url(./images/start-default.png) no-repeat;
     border: none;
     width: 112px;
@@ -122,7 +124,7 @@ article strong::after {
     cursor: pointer;
 }
 
-.reset:active {
+.reset.active {
     background: url(./images/reset-default.png) no-repeat;
     border: none;
     width: 112px;

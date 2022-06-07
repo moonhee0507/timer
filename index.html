@@ -19,19 +19,19 @@
                     <div class="time">
                         <div class="hrs">
                             <p>HRS</p>
-                            <img src="images/box.png" alt="시 구역입니다">
+                            <button class="time-hrs">00</button>
                         </div>
                         <div class="min">
                             <p>MIN</p>
-                            <img src="images/box.png" alt="분 구역입니다">
+                            <button class="time-min">00</button>
                         </div>
                         <div class="sec">
                             <p>SEC</p>
-                            <img src="images/box.png" alt="초 구역입니다">
+                            <button class="time-sec">00</button>
                         </div>
                     </div>
-                    <button type="button" class="start active"></button>
-                    <button type="button" class="reset active"></button>
+                    <button type="button" class="start"></button>
+                    <button type="button" class="reset"></button>
                 </div>
             </div>
         </article>
@@ -44,7 +44,16 @@
     </footer>
 
     <script>
+        const buttonStart = document.querySelector('.start');
+        const buttonReset = document.querySelector('.reset');
 
+        buttonStart.addEventListener('click', function() {
+            buttonStart.classList.add('active');
+        });
+
+        buttonReset.addEventListener('click', function() {
+            buttonReset.classList.add('active');
+        });
     </script>
 </body>
 </html>
